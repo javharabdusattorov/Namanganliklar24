@@ -1,80 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Namanganliklar 24</title>
+    <title>NAMANGANLIKLAR24</title>
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .dropbtn {
+            background-color: #fff;
+            color: #000;
+            padding-top: 9px;
+            padding-bottom: 8px;
+            padding-left: 20px;
+            padding-right: 5px;
+            font-size: 16px;
+            font-weight: 500;
+            border: none;
+            margin-left: -17px;
+        }
 
-    <style> 
-.dropbtn {
-    background-color: #fff;
-    color: #535353;
-    font-size: 14px;
-    border: none;
-    margin-left: 30px;
-    text-transform: uppercase;
-    font-weight: 500;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 30px;
-    padding-right: 8px;
-  }
-  
-.dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 90px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #fff;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #fff;
+        }
     </style>
-
 </head>
+
 <body>
-    
+
     <header class="bg-light pt-5 pb-5">
-        <div class="container  d-flex">
-                 <a class="n_title" href="#">
-                    <img src="img/logo.svg" alt="">
-                </a>
-                <a href="#">
-                    <img class="obhovo" src="img/$ 10137.2 P 138.26 E 10988.72.png" alt="">
-                </a>
-                    <form class="d-flex ml-3">
-                        <input class="form-control me-2" type="text" placeholder="" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit"><i class="far fa-search"></i></button>
-                      </form>
-                      <div class="dropdown">
-                        <button class="dropbtn"> рус</button>
-                        <div class="dropdown-content">
-                          <a href="#">UZB</a>
+        <div class="container  d-flex justify_">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <a class="n_title" href="#">
+                            <img src="img/logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 ">
+                        <a href="#">
+                            <img class="obhovo" src="img/$ 10137.2 P 138.26 E 10988.72.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 form_left">
+                                <form class="d-flex ">
+                                    <input class="form-control me-2" type="text" placeholder="" aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit"><i class="far fa-search"></i></button>
+                                </form>
+                    
+                            </div>
+        
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="dropdown">
+                                    <button class="dropbtn dptn"><img src="img/ru.png" alt=""> Рус</button>
+                                    <div class="dropdown-content">
+                                      <a href="uzb-index.html"><img class="uzb" src="img/uz.png" alt=""> O'zb</a>
+                                      <a href="#"><img class="uzb" src="img/uz.png" alt=""> Ўзб</a>
+                                    </div>
+                                  </div>
+                            </div>
+                
+                            <div class="col-lg-3 col-md-3 col-sm-12">
+                                <div class="telegram_join">
+                                <a class="padpiska" href="#"> <i class="fab fa-telegram"></i> Подписатся</a>
+                            </div>
+                            </div>
                         </div>
-                      </div>
-                      <div class="telegram_join">
-                        <a class="padpiska" href="#"> <i class="fab fa-telegram pr-2"></i> Подписатся</a>
-                      </div>
+                    </div>
+            </div>
         </div>
 
         <div class="container">
             <div class="header_bottom mt-4">
-                <nav> <ul>  
+                <nav>
+                    <ul>
                         <li><a class="uzb" href="#">Узбекистан</a></li>
                         <li><a href="#">Мир</a></li>
                         <li><a href="">Политика</a></li>
@@ -85,43 +118,190 @@
                         <li><a href="">Технологии</a></li>
                     </ul>
                 </nav>
-            </div>
-        </div>
-    </header>
-    
-         <div class="container bg-light">
-            <div class="header_covid">
-                <div class="row">
-                    <div class="col-lg-3">
-                             <div class="box d-flex">
-                                <img src="img/coronavirus.png" alt="">
-                                <h3>Коронавирус COVID-19 в Узбекистане</h3>
-                             </div>
-                    </div>
+                <div class="offcanvass ">
+                    <button class="btn btn-primary justify-content-end" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                            class="fas fa-ellipsis-v"></i></button>
 
-                    <div class="col-lg-3">
-                        <div class="box d-flex">
-                            <img src="img/mask (1).png" alt="">
-                            <div class="test_box">
-                                <h4>Инфицированы</h4>
-                            <p>199758</p>
-                            </div>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 id="offcanvasRightLabel"><img src="img/$ 10137.2 P 138.26 E 10988.72.png" alt=""></h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
                         </div>
-                    </div>
-
-                    <div class="col-lg-3">
-                        <div class="box d-flex">
-                            <img src="img/smile.png" alt="">
-                            <div class="test_box_2">
-                                <h4>Выздоровели</h4>
-                                <p>196851</p>
+                        <div class="offcanvas-body">
+                            <div class="offcanvas_ul">
+                                <li><a class="uzb" href="#">Узбекистан</a></li>
+                                <li><a href="#">Мир</a></li>
+                                <li><a href="">Политика</a></li>
+                                <li><a href="">Наманган</a></li>
+                                <li><a href="">Шоу Бизнес</a></li>
+                                <li><a href="">Экономика</a></li>
+                                <li><a href="">Спорт</a></li>
+                                <li><a href="">Технологии</a></li>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </header>
+
+    <div class="container bg-light">
+        <div class="header_covid">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="box1 d-flex">
+                        <img src="img/virus.png" alt="">
+                        <h3>Коронавирус COVID-19 в Узбекистане</h3>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="box d-flex">
+                        <img src="img/mask (1).png" alt="">
+                        <div class="test_box">
+                            <h4>Инфицированы</h4>
+                            <p>199758</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="box d-flex">
+                        <img src="img/smile.png" alt="">
+                        <div class="test_box_3">
+                            <h4>Выздоровели</h4>
+                            <p>196851</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="box d-flex">
+                        <img src="img/died.png" alt="">
+                        <div class="test_box_4">
+                            <h4>Умерли</h4>
+                            <p>1488</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="settings mt-5">
+        <div class="container d-flex settings_bg justify-content-between">
+            <div class="settings_text d-flex">
+                <img class="notification" src="img/notification.png" alt="">
+                <h2>Хотите узнать новости первыми? подключите уведомления!</h2>
+            </div>
+            <a href="#">
+                <button>Включит уведомления!</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="container">
+        <a class="novosti" href="#">
+            <p>Последние новости</p>
+        </a>
+    </div>
+
+    <div class="container container_right">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-12">
+                <a href="#">
+                    <h3>Cамые популярные новости</h3>
+                </a>
+                <div class="news"></div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="container bg-light section">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-12 d-flex">
+                    <img src="img/phone-naman.png" alt="">
+                    <div class="section_text">
+                        <h4>Всегда будьте в курсе последних новостей!</h4>
+                        <p>Установите мобильное приложение NAMANGANLIKLAR24 и все новости в вашем кармане!</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="img_box">
+                        <img class="google" src="img/googleplay.png" alt="">
+                        <img src="img/appstore.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-fluid padding">
+            <div class="row justify-content-between  footer_top pb-3">
+                <div class="col-lg-2 col-md-2 col-sm-6 p-0">
+                    <img src="img/logo-blue.png" alt="">
+                </div>
+                <div class="col-lg-9 col-md-12 col-12">
+                    <div class="row">
+                        <div class="col-lg-10 col-md-10 col-sm-12">
+                            <p> Подписывайтесь на наш канал в Telegram и будьте всегда в курсе самых последних новостей:
+                            </p>
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-sm-12 p-0">
+                            <a class="tg_join" href="#"> <i class="fab fa-telegram pr-2"></i> Подписатся</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row justify-content-between mt-4">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <h5 class="o_sayti">О сайте</h5>
+                    <p class="nmn_24"> Воспроизводство, копирование, тиражирование, распространение и иное использование
+                        информации с
+                        сайта «NAMANGANLIKLAR24.UZ» возможно только с предварительного письменного разрешения редакции.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-6">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <p class="writing"> Напишите нам </p>
+                            <p class="writing">Отправить новость</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12 col-12">
+                            <h4 class="join mb-3">Подписывайтесь на нас</h4>
+                            <div class="telegram_link d-flex mb-2">
+                                <a href="https://t.me/namanganliklar"><i class="fab fa-telegram"></i></a>
+                                <h5>Наш канал в Telegram</h5>
+                            </div>
+                            <div class="youtube_link d-flex">
+                                <a href="https://www.youtube.com/channel/UC3qE3XZY4VpzOEAWNxgYrzQ"><i
+                                        class="fab fa-youtube"></i></a>
+                                <h5>Наш канал в Youtube</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </footer>
 
     <script src="js/bootstrap.js"></script>
+    <script>
+        var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'))
+        var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
+            return new bootstrap.Dropdown(dropdownToggleEl)
+        })
+    </script>
 </body>
+
 </html>
